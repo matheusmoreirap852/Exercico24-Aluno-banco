@@ -17,29 +17,6 @@ import javafx.scene.control.TextField;
 
 public class ViewControler implements Initializable {
 
-	@FXML
-	private TextField txtID;
-
-	@FXML
-	private TextField txtCNPJ;
-
-	@FXML
-	private Button btTest;
-
-	@FXML
-	private TextField txtRazaoSocial;
-
-	@FXML
-	private TextField txtStatus;
-
-	@FXML
-	private TextField txtPagamento;
-
-	@FXML
-	private TextField txtEstado;
-
-	@FXML
-	private TextField txtCidade;
 
 	public static class Alerts {
 
@@ -51,6 +28,7 @@ public class ViewControler implements Initializable {
 			alert.show();
 		}
 	}
+	
 
 	@FXML
 	void onBtTestAction(ActionEvent event) {
@@ -91,8 +69,7 @@ public class ViewControler implements Initializable {
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		// TODO Auto-generated method stub
-		MascarasFX.mascaraData(txtID);
-		MascarasFX.mascaraCNPJ(txtCNPJ);
+		
 	}
 
 }
